@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "SParking";
+}
+
+<div class="jumbotron">
+    <h1>The smart way of parking</h1>
+    <h2>ROBOTIC PARKING SOLUTIONS AUTOMATED PARKING SYSTEMS</h2>
+    <h2>The Future Is Now!</h2>
+
+
+
+         
+
+    <p><a class="btn btn-default" @Html.ActionLink("CreateAccount", "CreateAccount","User") > &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+
+        <h2>
+            Constantly striving to improve quality, convenience and choice.
+        </h2>
+        <p><a class="btn btn-default"  @Html.ActionLink("Why choose us?", "About","Home") > &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>What we offer</h2>
+        <p>Let us show you the benefits of choosing us</p>
+        <p><a class="btn btn-default" @Html.ActionLink("What we offer", "Benefits","Home")> &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Good news!!!</h2>
+        <p>You can easily book a spot! Never worry again about finding an empty parking spot</p>
+        <p><a class="btn btn-default" @Html.ActionLink("Book now!", "AddOrEditBooking","Booking") > &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+
+        <h2>
+            Use our On - street service and keep track of your location
+        </h2>
+        <p><a class="btn btn-default" @Html.ActionLink("On-Street", "OnStreet", "OnStreet")> &raquo;</a></p>
+    </div>
+
+    <div class="col-md-4">
+
+        <h2>
+            Testimonials
+        </h2>
+
+        <p>Check other people's opinion and share your experience</p>
+        <p><a class="btn btn-default" @Html.ActionLink("Testimonials", "Testimonials", "Home")> &raquo;</a></p>
+    </div>
+
+    <div class="col-md-4">
+
+        <h2>
+            Pay Online
+        </h2>
+
+        <p>Fast and Easy</p>
+        <p><a class="btn btn-default" @Html.ActionLink("Payment", "Payment", "Payment")> &raquo;</a></p>
+    </div>
+
+
+</div>

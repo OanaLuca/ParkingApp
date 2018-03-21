@@ -1,0 +1,93 @@
+﻿@model Parking.UI.Models.Booking.BookingModel
+
+@{
+    ViewBag.Title = "DetailsBooking";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h2>Booking Info  </h2>
+<text>
+    <script>
+
+       
+      
+        alert(Math.random());
+
+
+        </script>
+</text>
+
+
+
+
+<html>
+<head>
+    <style>
+        .button {
+            position: relative;
+            background-color: #4CAF50;
+            border: none;
+            font-size: 28px;
+            color: #FFFFFF;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            text-decoration: none;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+            .button:after {
+                content: "";
+                background: #f1f1f1;
+                display: block;
+                position: absolute;
+                padding-top: 300%;
+                padding-left: 350%;
+                margin-left: -20px !important;
+                margin-top: -120%;
+                opacity: 0;
+                transition: all 0.8s
+            }
+
+            .button:active:after {
+                padding: 0;
+                margin: 0;
+                opacity: 1;
+                transition: 0s
+            }
+    </style>
+</head>
+<body>
+    <ul id="menu">
+    
+       
+        
+    </ul>
+
+    <h2 align ="center" ><i> Booking status </i> </h2>
+
+
+    <text align ="center" style="color:red">
+        Please remeber you unique key identifier!
+        Thank you and have a nice stay with us!
+
+    </text>
+
+    <div>
+    <button class="button"> Sucessfully Booked</button>
+        </div>
+
+
+
+    <div>
+        @Html.ActionLink("Back", "Index", "Home")
+    </div>
+  
+</body>
+</html>
+

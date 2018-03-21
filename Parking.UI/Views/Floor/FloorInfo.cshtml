@@ -1,0 +1,40 @@
+﻿@model Parking.UI.Models.Floor.FloorModel
+
+@{
+    ViewBag.Title = "FloorInfo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>FloorInfo</h2>
+
+
+ <div> 
+
+
+    @if (Model != null)
+    {
+        <table>
+            <tr>
+
+                <th>Empty Places</th>
+                <th>Parked Cars</th>
+                <th>Booked Places</th>
+
+            </tr>
+          @foreach (var entry in Model)
+          {
+              <tr>
+
+                  <td>@Model.CountEmptyPlaces</td>
+                  <td>
+                      @Model.CountCarsParked
+                  </td>
+                  <td>@Model.CountReservedPlaces</td>
+
+            </tr>
+          }
+
+        
+        </table>
+        }
+</div>
